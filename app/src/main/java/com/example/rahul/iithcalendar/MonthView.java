@@ -29,6 +29,7 @@ public class MonthView extends AppCompatActivity
                 clickedDate.putInt("year",year);
                 clickedDate.putInt("month",month);
                 clickedDate.putInt("dayOfMonth",dayOfMonth);
+                clickedDate.putString("date",""+dayOfMonth+""+month+""+year);
                 eventLauncher.putExtra("clickedDate",clickedDate);
                 startActivity(eventLauncher);
             }
